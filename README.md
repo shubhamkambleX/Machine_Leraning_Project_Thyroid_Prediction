@@ -59,7 +59,6 @@ To setup CI/CD pipeline in heroku we need 3 information
  HERUKU_EMAIL_ID = "Your Email Id"
  HERUKU_app = "Your Project Name"
 
-
 BUILD DOCKER IMAGE
 ```
 docker build -t <image_name>:<tagname> .
