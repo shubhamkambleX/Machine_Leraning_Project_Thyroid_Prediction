@@ -84,3 +84,9 @@ docker ps
 Tos stop docker conatiner
 ```
 docker stop <container_id>
+
+'''
+first we have to work on 
+logger  -- track every thing
+exception -- this is used to write the exception 
+'''
