@@ -1,0 +1,5 @@
+[2022-08-13 15:54:09,121] werkzeug - WARNING -  * Debugger is active!
+[2022-08-13 15:54:09,121] werkzeug - INFO -  * Debugger PIN: 567-975-331
+[2022-08-13 15:54:13,386] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 15:54:13] "GET /predict HTTP/1.1" 200 -
+[2022-08-13 15:54:18,000] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 15:54:18] "GET /predict HTTP/1.1" 200 -
+[2022-08-13 15:55:09,380] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 15:55:09] "POST /predict HTTP/1.1" 200 -

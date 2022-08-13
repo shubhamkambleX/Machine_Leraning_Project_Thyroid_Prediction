@@ -1,0 +1,106 @@
+columns:
+  age: int
+  sex: category
+  on_thyroxine: category 
+  query_on_thyroxine: category  
+  on_antithyroid_medication: category
+  sick: category  
+  pregnant: category  
+  thyroid_surgery: category  
+  I131_treatment: category
+  query_hypothyroid: category
+  query_hyperthyroid: category 
+  lithium: category
+  goitre: category
+  tumor: category
+  hypopituitary: category
+  psych: category
+  TSH: float
+  T3: float
+  TT4: float
+  T4U: float
+  FTI: float
+  referral_source: category
+  Class: int
+
+
+numerical_columns:
+  - age
+  - TSH
+  - T3
+  - TT4
+  - T4U
+  - FTI
+
+
+
+categorical_columns:
+  - sex
+  - on_thyroxine
+  - on_antithyroid_medication
+  - sick
+  - pregnant
+  - thyroid_surgery
+  - I131_treatment
+  - query_hypothyroid
+  - query_hyperthyroid
+  - lithium
+  - goitre
+  - tumor
+  - hypopituitary
+  - psych
+  - referral_source
+
+
+target_column: Class
+
+
+domain_value:
+  sex:
+    - F
+    - M
+  on_thyroxine:
+    - f
+    - t
+  on_antithyroid_medication:
+    - f
+    - t
+  sick:
+    - f
+    - t
+  pregnant:
+    - f
+    - t
+  thyroid_surgery:
+    - f
+    - t
+  I131_treatment:
+    - f
+    - t
+  query_hypothyroid:
+    - f
+    - t
+  query_hyperthyroid:
+    - f
+    - t
+  lithium:
+    - f
+    - t
+  goitre:
+    - f
+    - t 
+  tumor:
+    - f
+    - t
+  hypopituitary:
+    - f
+    - t 
+  psych:
+    - f
+    - t
+  referral_source:
+    - SVHC
+    - other
+    - SVI
+    - STMW
+    - SVHD

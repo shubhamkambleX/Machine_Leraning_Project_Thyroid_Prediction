@@ -1,0 +1,106 @@
+[2022-08-13 15:18:48,927] root - INFO - Training pipeline config: TrainingPipelineConfig(artifactdir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact')
+[2022-08-13 15:18:48,927] root - INFO - Data ingestion Config: DataIngestionConfig(dataset_download_url='https://github.com/shubhamkambleX/Data-Science-Material/raw/main/Thyroid_Dataset.tgz', tgz_download_dir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_ingestion\\2022-08-13-15-18-47\\tgz_data', raw_data_dir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_ingestion\\2022-08-13-15-18-47\\raw_data', ingested_train_dir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_ingestion\\2022-08-13-15-18-47\\ingested_data\\train', ingested_test_dir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_ingestion\\2022-08-13-15-18-47\\ingested_data\\test')
+[2022-08-13 15:18:48,927] root - INFO - ********************Data Ingestion log Started. ******************** 
+[2022-08-13 15:18:48,927] root - INFO - Downloading file from :[https://github.com/shubhamkambleX/Data-Science-Material/raw/main/Thyroid_Dataset.tgz] into :[D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\tgz_data\Thyroid_Dataset.tgz]
+[2022-08-13 15:18:49,879] root - INFO - File :[D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\tgz_data\Thyroid_Dataset.tgz] has been downloaded successfully.
+[2022-08-13 15:18:49,880] root - INFO - Extracting the tgz files: [D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\tgz_data\Thyroid_Dataset.tgz] into dir [D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\raw_data]
+[2022-08-13 15:18:49,914] root - INFO - Extraction completd
+[2022-08-13 15:18:49,914] root - INFO - Reading the CSV file: [D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\raw_data\Thyroid_Dataset.csv]
+[2022-08-13 15:18:50,977] root - INFO - Exporting the training dataset to file: [D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\ingested_data\train\Thyroid_Dataset.csv] 
+[2022-08-13 15:18:51,152] root - INFO - Exporting the test dataset to file : [D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\data_ingestion\2022-08-13-15-18-47\ingested_data\test\Thyroid_Dataset.csv] 
+[2022-08-13 15:18:51,159] root - INFO - Data Ingestion Artifact: [DataIngestionArtifact(train_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_ingestion\\2022-08-13-15-18-47\\ingested_data\\train\\Thyroid_Dataset.csv', test_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_ingestion\\2022-08-13-15-18-47\\ingested_data\\test\\Thyroid_Dataset.csv', is_ingested=True, message='Data Ingestion Successfully Completed.')]
+[2022-08-13 15:18:51,159] root - INFO - ==================== Data Ingestion Log Completed. ==================== 
+ 
+
+[2022-08-13 15:18:51,159] root - INFO - Data Validation Config: DataValidationConfig(schema_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\config\\schema.yaml', report_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_validation\\2022-08-13-15-18-47\\report.json', report_page_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_validation\\2022-08-13-15-18-47\\report.html')
+[2022-08-13 15:18:51,159] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Valdaition log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-08-13 15:18:51,159] root - INFO - Checking if training and test file is available
+[2022-08-13 15:18:51,159] root - INFO - Is train and test file exists?-> True
+[2022-08-13 15:18:52,140] root - INFO - Data validation artifact: DataValidationArtifact(schema_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\config\\schema.yaml', report_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_validation\\2022-08-13-15-18-47\\report.json', report_page_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_validation\\2022-08-13-15-18-47\\report.html', is_validated=True, message='Data Validation performed successully.')
+[2022-08-13 15:18:52,140] root - INFO - Data transformation config: DataTransformationConfig(add_bedroom_per_room=True, transformed_train_dir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_transformation\\2022-08-13-15-18-47\\transformed_data\\train', transformed_test_dir='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_transformation\\2022-08-13-15-18-47\\transformed_data\\test', preprocessed_object_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_transformation\\2022-08-13-15-18-47\\preprocessed\\preprocessed.pkl')
+[2022-08-13 15:18:52,140] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-08-13 15:18:52,140] root - INFO - Obtaining preprocessing object.
+[2022-08-13 15:18:52,155] root - INFO - Categorical columns: ['sex', 'on_thyroxine', 'on_antithyroid_medication', 'sick', 'pregnant', 'thyroid_surgery', 'I131_treatment', 'query_hypothyroid', 'query_hyperthyroid', 'lithium', 'goitre', 'tumor', 'hypopituitary', 'psych', 'referral_source']
+[2022-08-13 15:18:52,155] root - INFO - Numerical columns: ['age', 'TSH', 'T3', 'TT4', 'T4U', 'FTI']
+[2022-08-13 15:18:52,155] root - INFO - Obtaining training and test file path.
+[2022-08-13 15:18:52,155] root - INFO - Loading training and test data as pandas dataframe.
+[2022-08-13 15:18:52,218] root - INFO - Splitting input and target feature from training and testing dataframe.
+[2022-08-13 15:18:52,227] root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[2022-08-13 15:18:52,274] root - INFO - Saving transformed training and testing array.
+[2022-08-13 15:18:52,277] root - INFO - Saving preprocessing object.
+[2022-08-13 15:18:52,281] root - INFO - Data transformationa artifact: DataTransformationArtifact(is_transformed=True, message='Data transformation successfull.', transformed_train_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_transformation\\2022-08-13-15-18-47\\transformed_data\\train\\Thyroid_Dataset.npz', transformed_test_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_transformation\\2022-08-13-15-18-47\\transformed_data\\test\\Thyroid_Dataset.npz', preprocessed_object_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\data_transformation\\2022-08-13-15-18-47\\preprocessed\\preprocessed.pkl')
+[2022-08-13 15:18:52,286] root - INFO - Model trainer config: ModelTrainerConfig(trained_model_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\model_trainer\\2022-08-13-15-18-47\\trained_model\\model.pkl', base_accuracy=0.6, model_config_file_path='config\\model.yaml')
+[2022-08-13 15:18:52,286] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-08-13 15:18:52,286] root - INFO - Loading transformed training dataset
+[2022-08-13 15:18:52,294] root - INFO - Loading transformed testing dataset
+[2022-08-13 15:18:52,295] root - INFO - Splitting training and testing input and target feature
+[2022-08-13 15:18:52,295] root - INFO - Extracting model config file path
+[2022-08-13 15:18:52,295] root - INFO - Initializing model factory class using above model config file: config\model.yaml
+[2022-08-13 15:18:52,298] root - INFO - Expected accuracy: 0.6
+[2022-08-13 15:18:52,298] root - INFO - Initiating operation model selecttion
+[2022-08-13 15:18:52,299] root - INFO - Started Initializing model from config file
+[2022-08-13 15:18:52,299] root - INFO - Executing command: from <module 'sklearn.linear_model' from 'D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\venv\\lib\\site-packages\\sklearn\\linear_model\\__init__.py'> import LogisticRegression
+[2022-08-13 15:18:52,301] root - INFO - Executing:$ LogisticRegression().fit_intercept=True
+[2022-08-13 15:18:52,437] root - INFO - Executing command: from <module 'sklearn.ensemble' from 'D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\venv\\lib\\site-packages\\sklearn\\ensemble\\__init__.py'> import RandomForestClassifier
+[2022-08-13 15:18:52,439] root - INFO - Executing:$ RandomForestClassifier().min_samples_leaf=3
+[2022-08-13 15:18:52,441] root - INFO - Initialized model: [InitializedModelDetail(model_serial_number='module_0', model=LogisticRegression(), param_grid_search={'fit_intercept': [True, False]}, model_name='sklearn.linear_model.LogisticRegression'), InitializedModelDetail(model_serial_number='module_1', model=RandomForestClassifier(min_samples_leaf=3), param_grid_search={'min_samples_leaf': [6]}, model_name='sklearn.ensemble.RandomForestClassifier')]
+[2022-08-13 15:18:52,441] root - INFO - Executing command: from <module 'sklearn.model_selection' from 'D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\venv\\lib\\site-packages\\sklearn\\model_selection\\__init__.py'> import GridSearchCV
+[2022-08-13 15:18:52,442] root - INFO - Executing:$ GridSearchCV(estimator=LogisticRegression(),
+             param_grid={'fit_intercept': [True, False]}).cv=5
+[2022-08-13 15:18:52,443] root - INFO - Executing:$ GridSearchCV(cv=5, estimator=LogisticRegression(),
+             param_grid={'fit_intercept': [True, False]}).verbose=2
+[2022-08-13 15:18:52,444] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> f"Training LogisticRegression Started." <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:54,323] root - INFO - Executing command: from <module 'sklearn.model_selection' from 'D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\venv\\lib\\site-packages\\sklearn\\model_selection\\__init__.py'> import GridSearchCV
+[2022-08-13 15:18:54,326] root - INFO - Executing:$ GridSearchCV(estimator=RandomForestClassifier(min_samples_leaf=3),
+             param_grid={'min_samples_leaf': [6]}).cv=5
+[2022-08-13 15:18:54,328] root - INFO - Executing:$ GridSearchCV(cv=5, estimator=RandomForestClassifier(min_samples_leaf=3),
+             param_grid={'min_samples_leaf': [6]}).verbose=2
+[2022-08-13 15:18:54,328] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> f"Training RandomForestClassifier Started." <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:56,967] root - INFO - Acceptable model found:GridSearchedBestModel(model_serial_number='module_0', model=LogisticRegression(), best_model=LogisticRegression(fit_intercept=False), best_parameters={'fit_intercept': False}, best_score=0.9608859675134263)
+[2022-08-13 15:18:56,967] root - INFO - Acceptable model found:GridSearchedBestModel(model_serial_number='module_1', model=RandomForestClassifier(min_samples_leaf=3), best_model=RandomForestClassifier(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.9880690367148803)
+[2022-08-13 15:18:56,967] root - INFO - Best model: GridSearchedBestModel(model_serial_number='module_1', model=RandomForestClassifier(min_samples_leaf=3), best_model=RandomForestClassifier(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.9880690367148803)
+[2022-08-13 15:18:56,967] root - INFO - Best model found on training dataset: GridSearchedBestModel(model_serial_number='module_1', model=RandomForestClassifier(min_samples_leaf=3), best_model=RandomForestClassifier(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.9880690367148803)
+[2022-08-13 15:18:56,967] root - INFO - Extracting trained model list.
+[2022-08-13 15:18:56,967] root - INFO - Evaluation all trained model on training and testing dataset both
+[2022-08-13 15:18:56,967] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Started evaluating model: [LogisticRegression] <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:56,982] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Score <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:56,982] root - INFO - Train Score		 Test Score		 Average Score
+[2022-08-13 15:18:56,982] root - INFO - 0.6794520547945204		 0.7578947368421053		0.7165329052969501
+[2022-08-13 15:18:56,982] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Loss <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:56,982] root - INFO - Diff test train accuracy: [0.07844268204758487].
+[2022-08-13 15:18:56,982] root - INFO - Train log loss error: [1.33942434039907].
+[2022-08-13 15:18:56,982] root - INFO - Test log loss error: [1.0521757042124193].
+[2022-08-13 15:18:56,982] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Started evaluating model: [RandomForestClassifier] <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:57,049] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Score <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:57,049] root - INFO - Train Score		 Test Score		 Average Score
+[2022-08-13 15:18:57,049] root - INFO - 0.9726315789473685		 0.9913043478260869		0.9818791946308725
+[2022-08-13 15:18:57,049] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Loss <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-08-13 15:18:57,049] root - INFO - Diff test train accuracy: [0.018672768878718382].
+[2022-08-13 15:18:57,049] root - INFO - Train log loss error: [0.14882760646522172].
+[2022-08-13 15:18:57,049] root - INFO - Test log loss error: [0.045746723701869454].
+[2022-08-13 15:18:57,049] root - INFO - Acceptable model found MetricInfoArtifact(model_name='RandomForestClassifier(min_samples_leaf=6)', model_object=RandomForestClassifier(min_samples_leaf=6), train_log_loss=0.14882760646522172, test_log_loss=0.045746723701869454, train_accuracy=0.9726315789473685, test_accuracy=0.9913043478260869, model_accuracy=0.9818791946308725, index_number=1). 
+[2022-08-13 15:18:57,049] root - INFO - Best found model on both training and testing dataset.
+[2022-08-13 15:18:57,049] root - INFO - Saving model at path: D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\model_trainer\2022-08-13-15-18-47\trained_model\model.pkl
+[2022-08-13 15:18:57,106] root - INFO - Model Trainer Artifact: ModelTrainerArtifact(is_trained=True, message='Model Trained successfully', trained_model_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\model_trainer\\2022-08-13-15-18-47\\trained_model\\model.pkl', train_log_loss=0.14882760646522172, test_log_loss=0.045746723701869454, train_accuracy=0.9726315789473685, test_accuracy=0.9913043478260869, model_accuracy=0.9818791946308725)
+[2022-08-13 15:18:57,107] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-08-13 15:18:57,107] root - INFO - Model Evaluation Config: ModelEvaluationConfig(model_evaluation_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\model_evaluation\\2022-08-13-15-18-47\\model_evaluation.yaml', time_stamp='2022-08-13-15-18-47').
+[2022-08-13 15:18:57,107] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Evaluation log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-08-13 15:18:57,181] root - INFO - Converting target column into numpy array.
+[2022-08-13 15:18:57,181] root - INFO - Conversion completed target column into numpy array.
+[2022-08-13 15:18:57,181] root - INFO - Dropping target column from the dataframe.
+[2022-08-13 15:18:57,187] root - INFO - Dropping target column from the dataframe completed.
+[2022-08-13 15:18:57,187] root - INFO - Not found any existing model. Hence accepting trained model
+[2022-08-13 15:18:57,191] root - INFO - Previous eval result: {}
+[2022-08-13 15:18:57,191] root - INFO - Updated eval result:{'best_model': {'model_path': 'D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\model_trainer\\2022-08-13-15-18-47\\trained_model\\model.pkl'}}
+[2022-08-13 15:18:57,191] root - INFO - Model accepted. Model eval artifact ModelEvaluationArtifact(is_model_accepted=True, evaluated_model_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\housing\\artifact\\model_trainer\\2022-08-13-15-18-47\\trained_model\\model.pkl') created
+[2022-08-13 15:18:57,191] root - INFO - ====================Model Evaluation log completed.==================== 
+[2022-08-13 15:18:57,191] root - INFO - Model pusher config ModelPusherConfig(export_dir_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\saved_models\\20220813151857')
+[2022-08-13 15:18:57,191] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Pusher log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-08-13 15:18:57,191] root - INFO - Exporting model file: [D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\saved_models\20220813151857\model.pkl]
+[2022-08-13 15:18:57,199] root - INFO - Trained model: D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\housing\artifact\model_trainer\2022-08-13-15-18-47\trained_model\model.pkl is copied in export dir:[D:\Shubham\Ineuron Session\ML Projects\Machine_Leraning_Project_1\saved_models\20220813151857\model.pkl]
+[2022-08-13 15:18:57,199] root - INFO - Model pusher artifact: [ModelPusherArtifact(is_model_pusher=True, export_model_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\saved_models\\20220813151857\\model.pkl')]
+[2022-08-13 15:18:57,199] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Pusher log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-08-13 15:18:57,199] root - INFO - Model pusher artifact: ModelPusherArtifact(is_model_pusher=True, export_model_file_path='D:\\Shubham\\Ineuron Session\\ML Projects\\Machine_Leraning_Project_1\\saved_models\\20220813151857\\model.pkl')
+[2022-08-13 15:18:57,199] root - INFO - Pipeline completed.

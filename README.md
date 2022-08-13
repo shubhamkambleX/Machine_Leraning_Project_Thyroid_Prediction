@@ -1,92 +1,31 @@
-# Machine_Leraning_Project_1
+# Machinlearningdemo
+This is the machine learning demo which is used to create the end to end demo 
+## Software Used for Implementation
+
+1) Vs Code IDE 
+2) GitHub
+3) heruku cli 
+4) git cli 
 
 
-Creating conda environment
+creating conda environment
 ```
-conda create -p venv python==3.7 -y
-```
-```
-conda activate venv/
-```
-OR 
-```
-conda activate venv
+conda create -p  venv python==3.7 -y 
 ```
 
-```
-pip install -r requirements.txt
-```
-
-To Add files to git
-```
-git add .
-```
-
-OR
-```
-git add <file_name>
-```
-
-> Note: To ignore file or folder from git we can write name of file/folder in .gitignore file
-
-To check the git status 
-```
-git status
-```
-To check all version maintained by git
-```
-git log
-```
-
-To create version/commit all changes by git
-```
-git commit -m "message"
-```
-
-To send version/changes to github
-```
-git push origin main
-```
-
-To check remote url 
-```
-git remote -v
-```
-
-To setup CI/CD pipeline in heroku we need 3 information
-
- HERUKU_API_KEY = "your API Key"
- HERUKU_EMAIL_ID = "Your Email Id"
- HERUKU_app = "Your Project Name"
-
-BUILD DOCKER IMAGE
-```
-docker build -t <image_name>:<tagname> .
-```
-> Note: Image name for docker must be lowercase
-
-
-To list docker image
-```
-docker images
-```
-
-Run docker image
-```
-docker run -p 5000:5000 -e PORT=5000 f8c749e73678
-```
-
-To check running container in docker
-```
-docker ps
-```
-
-Tos stop docker conatiner
-```
-docker stop <container_id>
+To activate the conda environment 
 
 '''
-first we have to work on 
-logger  -- track every thing
-exception -- this is used to write the exception 
+to activate the conda 
+command  - conda activate D:\Shubham\Project\MachineLearningProject_demo\Machinlearningdemo\venv
 '''
+
+
+# Structure
+## 1)First we have to create the package for the CICD structure pipeline
+## so we have to create the package which are :
+## component, config, entity, exception, logger, pipeline  
+## 2)After creating the package we have first create the logger package: as we have first log the details of each and every steps which we are writing
+## 3)After creating logger package we create exception package as we create custom exception in this and we use that exception each and every time in are files.
+
+

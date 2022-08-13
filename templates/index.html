@@ -1,0 +1,218 @@
+
+
+{% block head %}
+
+
+<title>Thyroid Prediction</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-6 col-lg-6">
+
+
+        <form action="/predict" method="post">
+            <legend>Thyroid Detection Prediction</legend>
+            <div class="mb-3">
+                <label class="form-label">age</label>
+                <input class="form-control" type="text" name="age" placeholder="Enter a value of age"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">sex</label>
+                <input class="form-control" type="text" name="sex" placeholder="Enter a value of sex"
+                    required />
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label">on_thyroxine</label>
+                <input class="form-control" type="text" name="on_thyroxine"
+                    placeholder="Enter a value of thyroxine" />
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label">query_on_thyroxine</label>
+                <input class="form-control" type="text" name="query_on_thyroxine" placeholder="Enter a value of query_on_thyroxine"
+                    required />
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label">on_antithyroid_medication</label>
+                <input class="form-control" type="text" name="on_antithyroid_medication"
+                    placeholder="Enter a value of on_antithyroid_medication" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">sick</label>
+                <input class="form-control" type="text" name="sick" placeholder="Enter a value of sick"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">pregnant</label>
+                <input class="form-control" type="text" name="pregnant" placeholder="Enter a value of pregnant"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">thyroid_surgery</label>
+                <input class="form-control" type="text" name="thyroid_surgery"
+                    placeholder="Enter a value of thyroid_surgery" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">I131_treatment</label>
+                <input class="form-control" type="text" name="I131_treatment"
+                    placeholder="Enter a value of I131_treatment" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">query_hypothyroid</label>
+                <input class="form-control" type="text" name="query_hypothyroid"
+                    placeholder="Enter a value of query_hypothyroid" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">query_hyperthyroid</label>
+                <input class="form-control" type="text" name="query_hyperthyroid"
+                    placeholder="Enter a value of query_hyperthyroid" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">lithium</label>
+                <input class="form-control" type="text" name="lithium"
+                    placeholder="Enter a value of lithium" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">goitre</label>
+                <input class="form-control" type="text" name="goitre"
+                    placeholder="Enter a value of goitre" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">tumor</label>
+                <input class="form-control" type="text" name="tumor"
+                    placeholder="Enter a value of tumor" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">hypopituitary</label>
+                <input class="form-control" type="text" name="hypopituitary"
+                    placeholder="Enter a value of hypopituitary" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">psych</label>
+                <input class="form-control" type="text" name="psych"
+                    placeholder="Enter a value of psych" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">TSH</label>
+                <input class="form-control" type="text" name="TSH"
+                    placeholder="Enter a value of TSH" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">T3</label>
+                <input class="form-control" type="text" name="T3"
+                    placeholder="Enter a value of T3" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">TT4</label>
+                <input class="form-control" type="text" name="TT4"
+                    placeholder="Enter a value of TT4" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">T4U</label>
+                <input class="form-control" type="text" name="T4U"
+                    placeholder="Enter a value of T4U" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">FTI</label>
+                <input class="form-control" type="text" name="FTI"
+                    placeholder="Enter a value of FTI" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">referral_source</label>
+                <select class="form-control" name="referral_source" placeholder="Enter a value of referral_source"
+                    required>
+
+                    <option value="SVHC">
+                        SVHC
+                    </option>
+                    <option value="other">
+                        other
+                    </option>
+                    <option value="SVI">
+                        SVI
+                    </option>
+                    <option value="STMW">
+                        STMW
+                    </option>
+                    <option value="SVHD">
+                        SVHD
+                    </option>
+
+                </select>
+            </div>
+            <div class="mb-3">
+
+                <input class="btn btn-primary" type="submit" value="Prediction" required />
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-md-6 col-sm-12 col-xs-6 col-lg-6">
+        <div class="card">
+            <div class="card-header">
+              Thyroid Detection Prediction
+            </div>
+            <div class="card-body">
+        {% if context['retension_data'] is not none %}
+        <table class="table table-striped">
+            <caption>Tyhroid Detection Prediction </caption>
+            <tr>
+                <th>Input Feature</th>
+                <th>Feature Value</th>
+
+            </tr>
+            {% for column,value in context['retension_data'].items() %}
+
+
+
+            <tr>
+                <td>{{column}}</td>
+                <td>{{value[0]}}</td>
+            </tr>
+
+            {% endfor %}
+            <tr>
+
+                <td>Class </td>
+                <td>
+                    {{ context['Class'] }}
+                </td>
+            </tr>
+        </table>
+        <div>
+            {%if context['Class'] == 0 %}
+            <h5 class="card-title">You Don't Have Thyroid</h5>
+            {% else %}
+            <h5 class="card-title">You Have Thyroid</h5>
+            {% endif %}
+            <h5 class="card-title">Thanks</h5>
+        </div>
+
+        {% else %}
+       
+              <h5 class="card-title">Submit Form</h5>
+              <p class="card-text">Kindly provide necessary information to estimate HR Employee Retension Prediction </p>
+            
+         
+
+        {% endif %}
+        Go to <a href="/" class="btn btn-primary">Home</a>
+    </div>
+    <!-- <div>
+        {%if context['Class'] == 0 %}
+        <h5 class="card-title">You Don't Have Thyroid</h5>
+        {% else %}
+        <h5 class="card-title">You Don't Have Thyroid</h5>
+        {% endif %}
+        <h5 class="card-title">Thanks</h5>
+    </div> -->
+</div>
+    </div>
+
+    {% endblock %}

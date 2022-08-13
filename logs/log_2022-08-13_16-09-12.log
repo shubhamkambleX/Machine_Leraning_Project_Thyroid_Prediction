@@ -1,0 +1,6 @@
+[2022-08-13 16:09:13,412] werkzeug - WARNING -  * Debugger is active!
+[2022-08-13 16:09:13,420] werkzeug - INFO -  * Debugger PIN: 567-975-331
+[2022-08-13 16:09:35,853] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 16:09:35] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+[2022-08-13 16:09:35,902] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 16:09:35] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2022-08-13 16:09:36,092] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 16:09:36] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2022-08-13 16:09:36,447] werkzeug - INFO - 127.0.0.1 - - [13/Aug/2022 16:09:36] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
