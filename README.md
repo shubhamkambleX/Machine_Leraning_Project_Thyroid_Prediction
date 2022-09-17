@@ -1,5 +1,5 @@
 # Machinlearningdemo
-This is the machine learning Project Thyroid Prediction which is used to create the end to end demo 
+This is the machine learning Project Thyroid Prediction which is used to create the end to end demo and POC.
 ## Software Used for Implementation
 
 1) Vs Code IDE 
