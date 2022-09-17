@@ -1,0 +1,904 @@
+{
+      "data_drift": {
+            "name": "data_drift",
+            "datetime": "2022-08-20 17:26:11.526314",
+            "data": {
+                  "utility_columns": {
+                        "date": null,
+                        "id": null,
+                        "target": null,
+                        "prediction": null
+                  },
+                  "cat_feature_names": [
+                        "I131_treatment",
+                        "goitre",
+                        "hypopituitary",
+                        "lithium",
+                        "on_antithyroid_medication",
+                        "on_thyroxine",
+                        "pregnant",
+                        "psych",
+                        "query_hyperthyroid",
+                        "query_hypothyroid",
+                        "query_on_thyroxine",
+                        "referral_source",
+                        "sex",
+                        "sick",
+                        "thyroid_surgery",
+                        "tumor"
+                  ],
+                  "num_feature_names": [
+                        "Class",
+                        "FTI",
+                        "T3",
+                        "T4U",
+                        "TSH",
+                        "TT4",
+                        "age"
+                  ],
+                  "datetime_feature_names": [],
+                  "target_names": null,
+                  "options": {
+                        "confidence": null,
+                        "drift_share": 0.5,
+                        "nbinsx": 10,
+                        "xbins": null
+                  },
+                  "metrics": {
+                        "n_features": 23,
+                        "n_drifted_features": 0,
+                        "share_drifted_features": 0.0,
+                        "dataset_drift": false,
+                        "Class": {
+                              "current_small_hist": [
+                                    [
+                                          9.2317880794702,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.7682119205298015
+                                    ],
+                                    [
+                                          0.0,
+                                          0.1,
+                                          0.2,
+                                          0.30000000000000004,
+                                          0.4,
+                                          0.5,
+                                          0.6000000000000001,
+                                          0.7000000000000001,
+                                          0.8,
+                                          0.9,
+                                          1.0
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          9.227709645343056,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.7722903546569442
+                                    ],
+                                    [
+                                          0.0,
+                                          0.1,
+                                          0.2,
+                                          0.30000000000000004,
+                                          0.4,
+                                          0.5,
+                                          0.6000000000000001,
+                                          0.7000000000000001,
+                                          0.8,
+                                          0.9,
+                                          1.0
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.0005408011127946998,
+                              "drift_detected": false
+                        },
+                        "FTI": {
+                              "current_small_hist": [
+                                    [
+                                          0.0026490066225165563,
+                                          0.0019113085757397937,
+                                          0.01351328694777433,
+                                          0.005733925727219381,
+                                          0.001207142258361975,
+                                          0.00026825383519155,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          3.353172939894375e-05
+                                    ],
+                                    [
+                                          0.0,
+                                          39.5,
+                                          79.0,
+                                          118.5,
+                                          158.0,
+                                          197.5,
+                                          237.0,
+                                          276.5,
+                                          316.0,
+                                          355.5,
+                                          395.0
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          0.0030040739606365615,
+                                          0.001913209114595352,
+                                          0.013241420977330989,
+                                          0.005647323395274876,
+                                          0.0010237347016694427,
+                                          0.0003356507218588337,
+                                          8.391268046470843e-05,
+                                          4.1956340232354215e-05,
+                                          8.391268046470843e-06,
+                                          1.6782536092941685e-05
+                                    ],
+                                    [
+                                          0.0,
+                                          39.5,
+                                          79.0,
+                                          118.5,
+                                          158.0,
+                                          197.5,
+                                          237.0,
+                                          276.5,
+                                          316.0,
+                                          355.5,
+                                          395.0
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Wasserstein distance (normed)",
+                              "drift_score": 0.053790246603130025,
+                              "drift_detected": false
+                        },
+                        "T3": {
+                              "current_small_hist": [
+                                    [
+                                          0.3216650898770104,
+                                          0.13623462630085148,
+                                          0.4900662251655631,
+                                          0.3538315988647113,
+                                          0.08136234626300849,
+                                          0.02649006622516559,
+                                          0.007568590350047301,
+                                          0.009460737937559128,
+                                          0.0,
+                                          0.0018921475875118253
+                                    ],
+                                    [
+                                          0.0,
+                                          0.7,
+                                          1.4,
+                                          2.0999999999999996,
+                                          2.8,
+                                          3.5,
+                                          4.199999999999999,
+                                          4.8999999999999995,
+                                          5.6,
+                                          6.3,
+                                          7.0
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          0.26109905504030617,
+                                          0.3949318640909062,
+                                          0.23983589846217346,
+                                          0.033145508783559825,
+                                          0.00906811089361542,
+                                          0.002814241311811685,
+                                          0.001563467395450936,
+                                          0.0003126934790901869,
+                                          0.0003126934790901869,
+                                          0.0003126934790901874
+                                    ],
+                                    [
+                                          0.0,
+                                          1.06,
+                                          2.12,
+                                          3.18,
+                                          4.24,
+                                          5.300000000000001,
+                                          6.36,
+                                          7.42,
+                                          8.48,
+                                          9.540000000000001,
+                                          10.6
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Wasserstein distance (normed)",
+                              "drift_score": 0.0319163032359663,
+                              "drift_detected": false
+                        },
+                        "T4U": {
+                              "current_small_hist": [
+                                    [
+                                          0.4612698098909427,
+                                          0.013179137425455505,
+                                          0.026358274850911006,
+                                          0.5205759283054925,
+                                          1.9702810451055983,
+                                          1.574906922341932,
+                                          0.2899410233600213,
+                                          0.06589568712727749,
+                                          0.0395374122763665,
+                                          0.013179137425455515
+                                    ],
+                                    [
+                                          0.0,
+                                          0.20099999999999998,
+                                          0.40199999999999997,
+                                          0.603,
+                                          0.8039999999999999,
+                                          1.005,
+                                          1.206,
+                                          1.4069999999999998,
+                                          1.6079999999999999,
+                                          1.809,
+                                          2.01
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          0.45289337432708904,
+                                          0.005714742893717212,
+                                          0.10715142925719771,
+                                          1.3372498371298276,
+                                          1.863006183351811,
+                                          0.3786017167087653,
+                                          0.09857931491662192,
+                                          0.05571874321374282,
+                                          0.00857211434057581,
+                                          0.002857371446858609
+                                    ],
+                                    [
+                                          0.0,
+                                          0.23199999999999998,
+                                          0.46399999999999997,
+                                          0.696,
+                                          0.9279999999999999,
+                                          1.16,
+                                          1.392,
+                                          1.6239999999999999,
+                                          1.8559999999999999,
+                                          2.088,
+                                          2.32
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Wasserstein distance (normed)",
+                              "drift_score": 0.06557985972590674,
+                              "drift_detected": false
+                        },
+                        "TSH": {
+                              "current_small_hist": [
+                                    [
+                                          0.024403973509933775,
+                                          0.0002980132450331126,
+                                          0.00019867549668874172,
+                                          6.622516556291391e-05,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          3.3112582781456954e-05
+                                    ],
+                                    [
+                                          0.0,
+                                          40.0,
+                                          80.0,
+                                          120.0,
+                                          160.0,
+                                          200.0,
+                                          240.0,
+                                          280.0,
+                                          320.0,
+                                          360.0,
+                                          400.0
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          0.018624023614611542,
+                                          0.0001063157828906636,
+                                          4.3777087072626186e-05,
+                                          5.003095665442993e-05,
+                                          1.2507739163607482e-05,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          1.8761608745411225e-05,
+                                          1.2507739163607482e-05
+                                    ],
+                                    [
+                                          0.0,
+                                          53.0,
+                                          106.0,
+                                          159.0,
+                                          212.0,
+                                          265.0,
+                                          318.0,
+                                          371.0,
+                                          424.0,
+                                          477.0,
+                                          530.0
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Wasserstein distance (normed)",
+                              "drift_score": 0.03798239478529486,
+                              "drift_detected": false
+                        },
+                        "TT4": {
+                              "current_small_hist": [
+                                    [
+                                          0.0018173417526567072,
+                                          0.004004312336362236,
+                                          0.01272139226859695,
+                                          0.003665485907900816,
+                                          0.0009240720776220546,
+                                          6.160480517480364e-05,
+                                          3.080240258740182e-05,
+                                          0.0,
+                                          0.0,
+                                          3.080240258740182e-05
+                                    ],
+                                    [
+                                          0.0,
+                                          43.0,
+                                          86.0,
+                                          129.0,
+                                          172.0,
+                                          215.0,
+                                          258.0,
+                                          301.0,
+                                          344.0,
+                                          387.0,
+                                          430.0
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          0.001896231432733888,
+                                          0.004416831751855763,
+                                          0.012078840061357732,
+                                          0.00385412892832091,
+                                          0.0007322844963809729,
+                                          0.000215831219985971,
+                                          3.8541289283209104e-05,
+                                          7.70825785664182e-06,
+                                          7.70825785664182e-06,
+                                          7.70825785664182e-06
+                                    ],
+                                    [
+                                          0.0,
+                                          43.0,
+                                          86.0,
+                                          129.0,
+                                          172.0,
+                                          215.0,
+                                          258.0,
+                                          301.0,
+                                          344.0,
+                                          387.0,
+                                          430.0
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Wasserstein distance (normed)",
+                              "drift_score": 0.04984706027839862,
+                              "drift_detected": false
+                        },
+                        "age": {
+                              "current_small_hist": [
+                                    [
+                                          0.0009134505594884677,
+                                          0.0035015604780391264,
+                                          0.011570373753520592,
+                                          0.013701758392327016,
+                                          0.013854000152241756,
+                                          0.015376417751389215,
+                                          0.01857349470959885,
+                                          0.01903021998934307,
+                                          0.014158483672071245,
+                                          0.004262769277612847
+                                    ],
+                                    [
+                                          1.0,
+                                          9.7,
+                                          18.4,
+                                          27.099999999999998,
+                                          35.8,
+                                          44.5,
+                                          53.199999999999996,
+                                          61.89999999999999,
+                                          70.6,
+                                          79.3,
+                                          88.0
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          0.008188033378620055,
+                                          0.013724426054555323,
+                                          5.827781764142388e-05,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          7.284727205177985e-06
+                                    ],
+                                    [
+                                          0.0,
+                                          45.5,
+                                          91.0,
+                                          136.5,
+                                          182.0,
+                                          227.5,
+                                          273.0,
+                                          318.5,
+                                          364.0,
+                                          409.5,
+                                          455.0
+                                    ]
+                              ],
+                              "feature_type": "num",
+                              "stattest_name": "Wasserstein distance (normed)",
+                              "drift_score": 0.07826413403389021,
+                              "drift_detected": false
+                        },
+                        "I131_treatment": {
+                              "current_small_hist": [
+                                    [
+                                          745,
+                                          10
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2968,
+                                          49
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.00879700213872457,
+                              "drift_detected": false
+                        },
+                        "goitre": {
+                              "current_small_hist": [
+                                    [
+                                          745,
+                                          10
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2993,
+                                          24
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.01835931622602127,
+                              "drift_detected": false
+                        },
+                        "hypopituitary": {
+                              "current_small_hist": [
+                                    [
+                                          755,
+                                          0
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          3016,
+                                          1
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.010718550036898573,
+                              "drift_detected": false
+                        },
+                        "lithium": {
+                              "current_small_hist": [
+                                    [
+                                          754,
+                                          1
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          3000,
+                                          17
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.02684622029383649,
+                              "drift_detected": false
+                        },
+                        "on_antithyroid_medication": {
+                              "current_small_hist": [
+                                    [
+                                          744,
+                                          11
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2985,
+                                          32
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.012593321471990021,
+                              "drift_detected": false
+                        },
+                        "on_thyroxine": {
+                              "current_small_hist": [
+                                    [
+                                          649,
+                                          106
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2659,
+                                          358
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.022898413399567222,
+                              "drift_detected": false
+                        },
+                        "pregnant": {
+                              "current_small_hist": [
+                                    [
+                                          748,
+                                          7
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2971,
+                                          46
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.019294531091248346,
+                              "drift_detected": false
+                        },
+                        "psych": {
+                              "current_small_hist": [
+                                    [
+                                          704,
+                                          51
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2884,
+                                          133
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.036267615424206597,
+                              "drift_detected": false
+                        },
+                        "query_hyperthyroid": {
+                              "current_small_hist": [
+                                    [
+                                          708,
+                                          47
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2827,
+                                          190
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.0010577567390848968,
+                              "drift_detected": false
+                        },
+                        "query_hypothyroid": {
+                              "current_small_hist": [
+                                    [
+                                          713,
+                                          42
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2825,
+                                          192
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.01196348967107976,
+                              "drift_detected": false
+                        },
+                        "query_on_thyroxine": {
+                              "current_small_hist": [
+                                    [
+                                          745,
+                                          10
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2977,
+                                          40
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 4.072080405650262e-05,
+                              "drift_detected": false
+                        },
+                        "referral_source": {
+                              "current_small_hist": [
+                                    [
+                                          16,
+                                          83,
+                                          5,
+                                          202,
+                                          449
+                                    ],
+                                    [
+                                          "STMW",
+                                          "SVHC",
+                                          "SVHD",
+                                          "SVI",
+                                          "other"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          96,
+                                          303,
+                                          34,
+                                          832,
+                                          1752
+                                    ],
+                                    [
+                                          "STMW",
+                                          "SVHC",
+                                          "SVHD",
+                                          "SVI",
+                                          "other"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.03196236472570878,
+                              "drift_detected": false
+                        },
+                        "sex": {
+                              "current_small_hist": [
+                                    [
+                                          495,
+                                          231
+                                    ],
+                                    [
+                                          "F",
+                                          "M"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          1985,
+                                          911
+                                    ],
+                                    [
+                                          "F",
+                                          "M"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.0027444275523418127,
+                              "drift_detected": false
+                        },
+                        "sick": {
+                              "current_small_hist": [
+                                    [
+                                          725,
+                                          30
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2900,
+                                          117
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.0017383267521708019,
+                              "drift_detected": false
+                        },
+                        "thyroid_surgery": {
+                              "current_small_hist": [
+                                    [
+                                          747,
+                                          8
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2972,
+                                          45
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.013641184612934534,
+                              "drift_detected": false
+                        },
+                        "tumor": {
+                              "current_small_hist": [
+                                    [
+                                          734,
+                                          21
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "ref_small_hist": [
+                                    [
+                                          2942,
+                                          75
+                                    ],
+                                    [
+                                          "f",
+                                          "t"
+                                    ]
+                              ],
+                              "feature_type": "cat",
+                              "stattest_name": "Jensen-Shannon distance",
+                              "drift_score": 0.006526819675343475,
+                              "drift_detected": false
+                        }
+                  }
+            }
+      },
+      "timestamp": "2022-08-20 17:26:44.578280"
+}
